@@ -14,7 +14,7 @@ public class CmdPower extends FCommand {
     public CmdPower () {
         super();
         this.aliases.addAll(Aliases.power_power);
-        this.optionalArgs.put("player name", "you");
+        this.optionalArgs.put("player name");
 
         this.requirements = new CommandRequirements.Builder(Permission.POWER)
                 .build();
